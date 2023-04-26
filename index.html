@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/clip.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/Herunterladen.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <title>PokeDex</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+
+<body onload="init()">
+
+    <header class="header-row">
+        <!-- <div>
+            <button onclick="filterpokomon('')">All</button>
+            <img class="grass" onclick="filterpokomon('Grass')" src="img/Bug.png" alt="">
+            <img class="grass" onclick="filterpokomon('Electric')" src="img/Bug@2x.png" alt="">
+            <img class="grass" onclick="filterpokomon('Dragon')" src="img/Dragon.png" alt="">
+            <img class="grass" onclick="filterpokomon('Fire')" src="img/Fire.png" alt="">
+            <img class="grass" onclick="filterpokomon('Fairy')" src="img/Fairy.png" alt="">
+            <img class="grass" onclick="filterpokomon('Fighting')" src="img/Fight.png" alt="">
+            <img class="grass" onclick="filterpokomon('Ghost')" src="img/Ghost.png" alt="">
+            <img class="grass" onclick="filterpokomon('Flying')" src="img/Flying.png" alt="">
+            <img class="grass" onclick="filterpokomon('Dragon')" src="img/Dragon.png" alt="">
+            <img class="grass" onclick="filterpokomon('Steel')" src="img/Steel.png" alt="">
+        
+        </div> -->
+
+        <div>
+            <h1>PokeDex</h1>
+        </div>
+      
+        <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield 
+                   mdl-textfield--align-right">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+                            <i style="font-size: 35px;" class="material-icons">search</i>
+                        </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input onkeyup="search()" type="text" class="mdl-textfield__input d-none -white" placeholder="  Name..."
+                    id="fixed-header-drawer-exp">
+                </div>
+            </div>              
+    </header>
+
+    <div id="poke_container" class="poke-container"></div>
+    <div id="showPoco" class="showPoco">
+
+
+      
+
+
+    </div>
+
+
+
+</body>
+
+</html>
