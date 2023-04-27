@@ -1,6 +1,6 @@
 'use strict'
 
-let pokemons_number = 100;
+let pokemons_number = 301;
 let allPokemon = [];
 
 let colors = {
@@ -72,7 +72,6 @@ function showCard(id) {
 			
 					<div class="text2Page">
 						<div class="pokemonWertelinks" >
-							<!-- <span > Number </span> -->
 							<span > Type</span>
 							<span > Height  </span>
 							<span > Weight  </span>
@@ -98,7 +97,6 @@ function showCard(id) {
 	    </div>`;
 }
 
-
 function backContent() {
 	document.getElementById('showPoco').innerHTML = '';
 }
@@ -119,18 +117,16 @@ function rightImg(i) {
     }
 }
 
-
- function filterpokomon(pokotype) {
- 	for (let i = 0; i < allPokemon.length; i++) {
- 		let poko = getPokemenById(i) ;
-		if (poko.type == pokotype || pokotype == '') {
-			document.getElementById(poko.id).style.display = '';
-		} else {
-			document.getElementById(poko.id).style.display = 'none';
-		}
- 	}
-}
-
+// function filterpokomon(pokotype) {
+//  	for (let i = 0; i < allPokemon.length; i++) {
+//  		let poko = getPokemenById(i) ;
+// 		if (poko.type == pokotype || pokotype == '') {
+// 			document.getElementById(poko.id).style.display = '';
+// 		} else {
+// 			document.getElementById(poko.id).style.display = 'none';
+// 		}
+//  	}
+// }
 
 function all() {
 	for (let i = 0; i < allPokemon.length; i++) {

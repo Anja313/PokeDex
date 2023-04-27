@@ -6,7 +6,8 @@ body {
  
 *{
     font-weight: bold !important;  
-    color: white !important; }
+    color: white !important; 
+}
 
 /* ----------------------MenüLeise----------------------- */
 .header-row {
@@ -21,11 +22,7 @@ body {
     z-index: 1;
 }   
 
-@media  (max-width: 500px) {
-    .header-row {
-       flex-direction: column;
-    }  
-}
+
 /* ------poke-container--------------- */
 .poke-container {
     display: flex;
@@ -44,6 +41,7 @@ body {
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
             
 .pokemonName{
@@ -98,7 +96,7 @@ body {
 .text2Page{
     display: flex;
     line-height: 22px;
-    max-width: 350px;
+    max-width: 250px;
 }
 
 .pokeNumber{
@@ -111,12 +109,14 @@ font-size: 18px;
     width: 25vw;
     display: flex;
     flex-direction: column;
+    margin: 0 100px 0 0; 
 }
 
 .pokemonWerterechts {
-    width: 4vw;
+    width: 25vw;
     display: flex;
     flex-direction: column;
+ 
 }
 /* -----------------Icon's------------------------ */
 
@@ -161,4 +161,27 @@ font-size: 18px;
   }
 
   .mdl-textfield__input{
-    padding-left: 10%; }
+    padding-left: 10%; 
+}
+
+@media  (max-width: 600px) {
+    .header-row {
+       flex-direction: column;
+    }  
+
+    .pokemonWertelinks {
+        margin: 0 30px 0 0;
+    }
+    
+   
+}
+
+@media  (max-width: 700px) {
+    
+
+    .pokemonWertelinks {
+        margin: 0 100px 0 0;
+    }
+    
+   
+}
